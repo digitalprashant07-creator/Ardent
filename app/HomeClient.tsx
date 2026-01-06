@@ -29,6 +29,7 @@ import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import  Link  from "next/link";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,16 +49,16 @@ gsap.registerPlugin(ScrollTrigger);
 // );
 
 // Mock Image component (Replace with import Image from 'next/image' in Next.js)
-const Image = ({ src, alt, width, height, className, ...props }) => (
-  <img
-    src={src}
-    alt={alt}
-    width={width}
-    height={height}
-    className={className}
-    {...props}
-  />
-);
+// const Image = ({ src, alt, width, height, className, ...props }) => (
+//   <img
+//     src={src}
+//     alt={alt}
+//     width={width}
+//     height={height}
+//     className={className}
+//     {...props}
+//   />
+// );
 
 const useIntersectionObserver = (options = {}) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
