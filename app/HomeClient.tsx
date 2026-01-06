@@ -60,6 +60,8 @@ gsap.registerPlugin(ScrollTrigger);
 //   />
 // );
 
+// --- UTILS & HOOKS ---
+
 function useIntersectionObserver<T extends HTMLElement>(
   options?: IntersectionObserverInit
 ): [React.RefObject<T | null>, boolean] {
