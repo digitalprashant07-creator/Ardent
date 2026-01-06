@@ -134,13 +134,27 @@ const NumberTicker = ({
 /**
  * PAGE COMPONENTS
  */
+type ImageComparisonProps = {
+  img: string;
+  alt: string;
+  className?: string;
+};
 
-const ImageComparison = ({ img, alt, className }) => {
+
+const ImageComparison = ({
+  img,
+  alt,
+  className,
+}: ImageComparisonProps) => {
+
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
-  const handleMove = useCallback((event) => {
+
+  const handleMove = useCallback(
+  (event: MouseEvent | TouchEvent) => {
+
     if (!containerRef.current) return;
 
     const rect = containerRef.current.getBoundingClientRect();
@@ -159,7 +173,8 @@ const ImageComparison = ({ img, alt, className }) => {
 
   // Add global event listeners for drag
   useEffect(() => {
-    const handleGlobalMove = (e) => {
+    const handleGlobalMove = (e: MouseEvent | TouchEvent) => {
+
       if (isDragging) {
         handleMove(e);
       }
