@@ -12,11 +12,7 @@ import {
   X,
   Send
 } from 'lucide-react';
-
-// --- MOCK COMPONENTS ---
-const Link = ({ href, children, className, ...props }) => (
-  <a href={href} className={className} {...props}>{children}</a>
-);
+import Link from 'next/link';
 
 // --- UTILS & HOOKS ---
 const useMousePosition = () => {

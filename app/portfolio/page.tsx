@@ -21,11 +21,7 @@ import {
   Filter,
   Target
 } from 'lucide-react';
-
-// --- MOCK COMPONENTS ---
-const Link = ({ href, children, className, ...props }) => (
-  <a href={href} className={className} {...props}>{children}</a>
-);
+import Link from 'next/link';
 
 const Image = ({ src, alt, className, ...props }) => (
   <img src={src} alt={alt} className={className} {...props} />
