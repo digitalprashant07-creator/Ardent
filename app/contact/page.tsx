@@ -15,17 +15,11 @@ import {
 } from 'lucide-react';
 import 'react-phone-number-input/style.css'
 import PhoneNumberInput from '@/components/PhoneNumberInput';
+import Link from 'next/link';
+import Image from 'next/image';
+// --- GOOGLE SHEET URL FOR FORM SUBMISSION ---
 
 const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbx7MQ6L4LH6TJ8ihiDVmaQtOgJ-0EqSDERut4VC8Q4KinYjT42-qSkbmSTSyxvfezrk/exec';
-
-// --- MOCK LINK & IMAGE ---
-const Link = ({ href, children, className, ...props }) => (
-  <a href={href} className={className} {...props}>{children}</a>
-);
-
-const Image = ({ src, alt, className, ...props }) => (
-  <img src={src} alt={alt} className={className} {...props} />
-);
 
 const ContactForm = () => {
   const [phone, setPhone] = useState('');
