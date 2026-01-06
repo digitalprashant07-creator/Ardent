@@ -28,7 +28,7 @@ import {
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import  Link  from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -100,7 +100,7 @@ const NumberTicker = ({
   delay = 0,
   className,
 }: NumberTickerProps) => {
- const [ref, isVisible] = useIntersectionObserver<HTMLSpanElement>();
+  const [ref, isVisible] = useIntersectionObserver<HTMLSpanElement>();
   const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
@@ -169,9 +169,11 @@ const handleMove = useCallback(
   []
 );
 
+
 const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
   handleMove(e.nativeEvent);
 };
+
 
 
 
@@ -214,15 +216,16 @@ const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
   onClick={handleClick}
 >
 
+
       {/* Background Layer: AFTER (Full Color) */}
       <div className="absolute inset-0 w-full h-full">
         <div className="absolute inset-0 bg-blue-900/20 mix-blend-overlay z-10 pointer-events-none" />
         <Image
-  src={img}
-  alt={`After ${alt}`}
-  fill
-  className="object-cover"
-/>
+          src={img}
+          alt={`After ${alt}`}
+          fill
+          className="object-cover"
+        />
 
         <div className="absolute top-4 right-4 z-10 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">
           <span className="text-[10px] font-bold text-white uppercase tracking-wider">
@@ -280,11 +283,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
           ? "bg-white/80 backdrop-blur-md border-b border-gray-100 py-2"
           : "bg-transparent py-6"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link
@@ -312,7 +314,7 @@ const Navbar = () => {
           >
             Services
           </Link>
-           <Link
+          <Link
             href="#methodology"
             className="hover:text-black transition-colors"
           >
@@ -395,9 +397,8 @@ const Hero = () => {
                     className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 overflow-hidden"
                   >
                     <Image
-                      src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${
-                        i * 34
-                      }`}
+                      src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 34
+                        }`}
                       alt="Avatar"
                       width={40}
                       height={40}
@@ -514,9 +515,8 @@ const StorySection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center transition-all duration-1000 transform ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-          }`}
+          className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center transition-all duration-1000 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
         >
           {/* Left Side: Headings */}
           <div>
@@ -1089,19 +1089,16 @@ const Methodology = () => {
             {steps.map((step, i) => (
               <div
                 key={i}
-                className={`sticky group bg-white/90 backdrop-blur-xl border-l-4 ${
-                  step.color.split(" ")[0]
-                } border-t border-r border-b border-gray-100 p-8 md:p-12 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden`}
+                className={`sticky group bg-white/90 backdrop-blur-xl border-l-4 ${step.color.split(" ")[0]
+                  } border-t border-r border-b border-gray-100 p-8 md:p-12 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden`}
                 // Dynamic stacking effect
                 style={{ marginTop: i === 0 ? 0 : "-5rem" }}
               >
                 <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
                   <div
-                    className={`flex-shrink-0 w-16 h-16 rounded-2xl ${
-                      step.bg
-                    } border ${
-                      step.color.split(" ")[0]
-                    } flex items-center justify-center`}
+                    className={`flex-shrink-0 w-16 h-16 rounded-2xl ${step.bg
+                      } border ${step.color.split(" ")[0]
+                      } flex items-center justify-center`}
                   >
                     {step.icon}
                   </div>
@@ -1371,9 +1368,8 @@ const FAQ = () => {
                 {openIndex === i ? <Minus size={20} /> : <Plus size={20} />}
               </button>
               <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === i ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-                }`}
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === i ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+                  }`}
               >
                 <div className="p-6 pt-0 text-gray-500">{faq.a}</div>
               </div>
