@@ -152,29 +152,28 @@ const ImageComparison = ({
   const containerRef = useRef<HTMLDivElement | null>(null);
 
 
- const handleMove = useCallback(
+const handleMove = useCallback(
   (event: MouseEvent | TouchEvent) => {
     if (!containerRef.current) return;
 
     const rect = containerRef.current.getBoundingClientRect();
 
-    let clientX: number;
-    if ("touches" in event) {
-      clientX = event.touches[0].clientX;
-    } else {
-      clientX = event.clientX;
-    }
+    const clientX =
+      "touches" in event ? event.touches[0].clientX : event.clientX;
 
     const x = clientX - rect.left;
-    const newPosition = Math.max(
-      0,
-      Math.min(100, (x / rect.width) * 100)
-    );
+    const newPosition = Math.max(0, Math.min(100, (x / rect.width) * 100));
 
     setSliderPosition(newPosition);
   },
   []
 );
+
+const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  handleMove(e.nativeEvent);
+};
+
+
 
   const handleMouseDown = () => setIsDragging(true);
   const handleMouseUp = () => setIsDragging(false);
@@ -207,21 +206,24 @@ const ImageComparison = ({
   }, [isDragging, handleMove]);
 
   return (
-    <div
-      ref={containerRef}
-      className={`relative select-none group overflow-hidden cursor-ew-resize ${className}`}
-      onMouseDown={handleMouseDown}
-      onTouchStart={handleTouchStart}
-      onClick={handleMove}
-    >
+   <div
+  ref={containerRef}
+  className={`relative select-none group overflow-hidden cursor-ew-resize ${className}`}
+  onMouseDown={handleMouseDown}
+  onTouchStart={handleTouchStart}
+  onClick={handleClick}
+>
+
       {/* Background Layer: AFTER (Full Color) */}
       <div className="absolute inset-0 w-full h-full">
         <div className="absolute inset-0 bg-blue-900/20 mix-blend-overlay z-10 pointer-events-none" />
         <Image
-          src={img}
-          alt={`After ${alt}`}
-          className="w-full h-full object-cover"
-        />
+  src={img}
+  alt={`After ${alt}`}
+  fill
+  className="object-cover"
+/>
+
         <div className="absolute top-4 right-4 z-10 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">
           <span className="text-[10px] font-bold text-white uppercase tracking-wider">
             After
@@ -1319,7 +1321,8 @@ const CTA = () => {
 
 // 10. FAQ
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
 
   const faqs = [
     {
