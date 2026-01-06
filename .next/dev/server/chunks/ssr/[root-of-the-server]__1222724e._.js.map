@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/ShubhamSingh/Downloads/Brand-io/app/page.tsx"],"sourcesContent":["// import HomeClient from \"./HomeClient\";\n\n\n// export default function Home() {\n//   return (\n//     <div className=\"min-h-screen bg-white text-slate-900 font-sans selection:bg-purple-200 selection:text-purple-900\">\n//      <HomeClient />\n\n//         </div>\n//   );\n// }"],"names":[],"mappings":"AAAA,yCAAyC;AAGzC,mCAAmC;AACnC,aAAa;AACb,yHAAyH;AACzH,sBAAsB;AAEtB,iBAAiB;AACjB,OAAO;AACP,IAAI"}}]
+}
