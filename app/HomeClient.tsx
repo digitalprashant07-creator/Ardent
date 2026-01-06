@@ -85,26 +85,41 @@ const useIntersectionObserver = (options = {}) => {
 
   return [elementRef, isIntersecting];
 };
+type NumberTickerProps = {
+  value: string;              // "100+", "50K", etc.
+  direction?: "up" | "down";
+  delay?: number;
+  className?: string;
+};
 
-const NumberTicker = ({ value, direction = "up", delay = 0, className }) => {
+
+const NumberTicker = ({
+  value,
+  direction = "up",
+  delay = 0,
+  className,
+}: NumberTickerProps) => {
   const [ref, isVisible] = useIntersectionObserver();
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
-    if (isVisible) {
-      let start = 0;
-      const end = parseInt(value.substring(0, value.length - 1)) || 0;
-      const duration = 2000;
-      const incrementTime = (duration / end) * 10;
+    if (!isVisible) return;
 
-      const timer = setInterval(() => {
-        start += 1;
-        setCount(start);
-        if (start === end) clearInterval(timer);
-      }, incrementTime);
+    let start = 0;
+    const end = parseInt(value.replace(/\D/g, "")) || 0;
+    const duration = 2000;
 
-      return () => clearInterval(timer);
-    }
+    if (end === 0) return;
+
+    const stepTime = Math.max(Math.floor(duration / end), 20);
+
+    const timer = setInterval(() => {
+      start += 1;
+      setCount(start);
+      if (start >= end) clearInterval(timer);
+    }, stepTime);
+
+    return () => clearInterval(timer);
   }, [isVisible, value]);
 
   return (
