@@ -60,37 +60,37 @@ gsap.registerPlugin(ScrollTrigger);
 //   />
 // );
 
-const useIntersectionObserver = (options = {}) => {
+function useIntersectionObserver<T extends HTMLElement>(
+  options?: IntersectionObserverInit
+): [React.RefObject<T>, boolean] {
+  const elementRef = useRef<T>(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const elementRef = useRef(null);
 
   useEffect(() => {
+    if (!elementRef.current) return;
+
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsIntersecting(entry.isIntersecting);
-      },
+      ([entry]) => setIsIntersecting(entry.isIntersecting),
       { threshold: 0.1, ...options }
     );
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
+    observer.observe(elementRef.current);
 
-    return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
-      }
-    };
+    return () => observer.disconnect();
   }, [options]);
 
   return [elementRef, isIntersecting];
-};
+}
+//fsdfdsf
+//esfasdf
 type NumberTickerProps = {
   value: string;              // "100+", "50K", etc.
   direction?: "up" | "down";
   delay?: number;
   className?: string;
 };
+
+//this is a simple number ticker that animates from 0 to the target number when it comes into view
 
 
 const NumberTicker = ({
@@ -99,7 +99,7 @@ const NumberTicker = ({
   delay = 0,
   className,
 }: NumberTickerProps) => {
-  const [ref, isVisible] = useIntersectionObserver();
+ const [ref, isVisible] = useIntersectionObserver<HTMLSpanElement>();
   const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
