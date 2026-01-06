@@ -62,8 +62,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 function useIntersectionObserver<T extends HTMLElement>(
   options?: IntersectionObserverInit
-): [React.RefObject<T>, boolean] {
-  const elementRef = useRef<T>(null);
+): [React.RefObject<T | null>, boolean] {
+  const elementRef = useRef<T | null>(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
@@ -81,6 +81,7 @@ function useIntersectionObserver<T extends HTMLElement>(
 
   return [elementRef, isIntersecting];
 }
+
 //fsdfdsf
 //esfasdf
 type NumberTickerProps = {
