@@ -152,19 +152,29 @@ const ImageComparison = ({
   const containerRef = useRef<HTMLDivElement | null>(null);
 
 
-  const handleMove = useCallback(
+ const handleMove = useCallback(
   (event: MouseEvent | TouchEvent) => {
-
     if (!containerRef.current) return;
 
     const rect = containerRef.current.getBoundingClientRect();
-    const x =
-      (event.touches ? event.touches[0].clientX : event.clientX) - rect.left;
-    const width = rect.width;
-    const newPosition = Math.max(0, Math.min(100, (x / width) * 100));
+
+    let clientX: number;
+    if ("touches" in event) {
+      clientX = event.touches[0].clientX;
+    } else {
+      clientX = event.clientX;
+    }
+
+    const x = clientX - rect.left;
+    const newPosition = Math.max(
+      0,
+      Math.min(100, (x / rect.width) * 100)
+    );
 
     setSliderPosition(newPosition);
-  }, []);
+  },
+  []
+);
 
   const handleMouseDown = () => setIsDragging(true);
   const handleMouseUp = () => setIsDragging(false);
