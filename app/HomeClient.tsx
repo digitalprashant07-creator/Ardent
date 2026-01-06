@@ -28,6 +28,7 @@ import {
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import  Link  from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,11 +41,11 @@ gsap.registerPlugin(ScrollTrigger);
  */
 
 // Mock Link component (Replace with import Link from 'next/link' in Next.js)
-const Link = ({ href, children, className, ...props }) => (
-  <a href={href} className={className} {...props}>
-    {children}
-  </a>
-);
+// const Link = ({ href, children, className, ...props }) => (
+//   <a href={href} className={className} {...props}>
+//     {children}
+//   </a>
+// );
 
 // Mock Image component (Replace with import Image from 'next/image' in Next.js)
 const Image = ({ src, alt, width, height, className, ...props }) => (
