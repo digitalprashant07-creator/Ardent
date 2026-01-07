@@ -42,15 +42,20 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "unset";
-    return () => (document.body.style.overflow = "unset");
-  }, [isOpen]);
+useEffect(() => {
+  document.body.style.overflow = isOpen ? "hidden" : "unset";
 
-  const handleNavClick = (name) => {
-    setActiveLink(name);
-    setIsOpen(false);
+  return () => {
+    document.body.style.overflow = "unset";
   };
+}, [isOpen]);
+
+const handleNavClick = (name: string) => {
+  setActiveLink(name);
+  setIsOpen(false);
+};
+
+
 
   return (
     <>

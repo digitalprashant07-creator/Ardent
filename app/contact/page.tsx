@@ -22,7 +22,7 @@ import Image from 'next/image';
 const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbx7MQ6L4LH6TJ8ihiDVmaQtOgJ-0EqSDERut4VC8Q4KinYjT42-qSkbmSTSyxvfezrk/exec';
 
 const ContactForm = () => {
-  const [phone, setPhone] = useState('');
+const [phone, setPhone] = useState<string | undefined>(undefined);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   return (

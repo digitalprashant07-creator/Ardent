@@ -22,14 +22,8 @@ import {
   Target
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
-const Image = ({ src, alt, className, ...props }) => (
-  <img src={src} alt={alt} className={className} {...props} />
-);
-
-// --- SHARED COMPONENTS ---
-
-// Navbar (Reused with Portfolio Active)
 const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 py-4">
@@ -55,56 +49,86 @@ const Navbar = () => {
 // --- CUSTOM UTILS ---
 
 // Image Comparison Slider (Reused for Branding Section)
-const ImageComparison = ({ before, after, alt, className }) => {
+type ImageComparisonProps = {
+  before: string;
+  after: string;
+  alt: string;
+  className?: string;
+};
+
+const ImageComparison = ({
+  before,
+  after,
+  alt,
+  className,
+}: ImageComparisonProps) => {
+
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
-  const containerRef = useRef(null);
+const containerRef = useRef<HTMLDivElement | null>(null);
 
-  const handleMove = useCallback((event) => {
+const handleMove = useCallback(
+  (event: MouseEvent | TouchEvent) => {
     if (!containerRef.current) return;
+
     const rect = containerRef.current.getBoundingClientRect();
-    const x = (event.touches ? event.touches[0].clientX : event.clientX) - rect.left;
-    const width = rect.width;
-    const newPosition = Math.max(0, Math.min(100, (x / width) * 100));
+    const clientX =
+      event instanceof TouchEvent
+        ? event.touches[0].clientX
+        : event.clientX;
+
+    const x = clientX - rect.left;
+    const newPosition = Math.max(0, Math.min(100, (x / rect.width) * 100));
     setSliderPosition(newPosition);
-  }, []);
+  },
+  []
+);
+
+const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  handleMove(e.nativeEvent);
+};
+
+
 
   const handleMouseDown = () => setIsDragging(true);
   const handleMouseUp = () => setIsDragging(false);
   const handleTouchStart = () => setIsDragging(true);
   const handleTouchEnd = () => setIsDragging(false);
 
-  useEffect(() => {
-    const handleGlobalMove = (e) => {
-      if (isDragging) handleMove(e);
-    };
-    const handleGlobalUp = () => setIsDragging(false);
+ useEffect(() => {
+  const handleGlobalMove = (e: MouseEvent | TouchEvent) => {
+    if (isDragging) handleMove(e);
+  };
 
-    if (isDragging) {
-      window.addEventListener('mousemove', handleGlobalMove);
-      window.addEventListener('mouseup', handleGlobalUp);
-      window.addEventListener('touchmove', handleGlobalMove);
-      window.addEventListener('touchend', handleGlobalUp);
-    }
-    return () => {
-      window.removeEventListener('mousemove', handleGlobalMove);
-      window.removeEventListener('mouseup', handleGlobalUp);
-      window.removeEventListener('touchmove', handleGlobalMove);
-      window.removeEventListener('touchend', handleGlobalUp);
-    };
-  }, [isDragging, handleMove]);
+  const handleGlobalUp = () => setIsDragging(false);
+
+  if (isDragging) {
+    window.addEventListener('mousemove', handleGlobalMove);
+    window.addEventListener('mouseup', handleGlobalUp);
+    window.addEventListener('touchmove', handleGlobalMove);
+    window.addEventListener('touchend', handleGlobalUp);
+  }
+
+  return () => {
+    window.removeEventListener('mousemove', handleGlobalMove);
+    window.removeEventListener('mouseup', handleGlobalUp);
+    window.removeEventListener('touchmove', handleGlobalMove);
+    window.removeEventListener('touchend', handleGlobalUp);
+  };
+}, [isDragging, handleMove]);
 
   return (
     <div
-      ref={containerRef}
-      className={`relative select-none group overflow-hidden cursor-ew-resize ${className}`}
-      onMouseDown={handleMouseDown}
-      onTouchStart={handleTouchStart}
-      onClick={handleMove}
-    >
+  ref={containerRef}
+  className={`relative select-none group overflow-hidden cursor-ew-resize ${className}`}
+  onMouseDown={handleMouseDown}
+  onTouchStart={handleTouchStart}
+  onClick={handleClick}
+>
+
       {/* After Image (Background) */}
       <div className="absolute inset-0 w-full h-full">
-        <Image src={after} alt={`After ${alt}`} className="w-full h-full object-cover" />
+        <Image width={400} height={400} src={after} alt={`After ${alt}`} className="w-full h-full object-cover" />
         <div className="absolute top-4 right-4 z-10 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">
           <span className="text-[10px] font-bold text-white uppercase tracking-wider">After</span>
         </div>
@@ -112,7 +136,7 @@ const ImageComparison = ({ before, after, alt, className }) => {
       {/* Before Image (Foreground Clipped) */}
       <div className="absolute inset-0 w-full h-full overflow-hidden border-r-2 border-white" style={{ width: `${sliderPosition}%` }}>
         <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none mix-blend-saturation" />
-        <Image src={before} alt={`Before ${alt}`} className="w-full h-full max-w-none object-cover grayscale" style={{ width: containerRef.current ? containerRef.current.offsetWidth : '100%' }} />
+        <Image width={400} height={400} src={before} alt={`Before ${alt}`} className="w-full h-full max-w-none object-cover grayscale" style={{ width: containerRef.current ? containerRef.current.offsetWidth : '100%' }} />
         <div className="absolute top-4 left-4 z-20 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
           <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Before</span>
         </div>
@@ -153,15 +177,18 @@ const ClientReels = () => {
     { client: "Flute CEO", result: "300% Growth", video: "https://www.youtube.com/shorts/JWkUwktw9jU", type: 'youtube' },
   ];
 
-  const scrollRef = useRef(null);
+const scrollRef = useRef<HTMLDivElement | null>(null);
 
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      const { current } = scrollRef;
-      const scrollAmount = direction === 'left' ? -340 : 340;
-      current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
-  };
+const scroll = (direction: 'left' | 'right') => {
+  if (scrollRef.current) {
+    const scrollAmount = direction === 'left' ? -340 : 340;
+    scrollRef.current.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth',
+    });
+  }
+};
+
 
   const getYoutubeEmbedUrl = (url: string) => {
     try {
@@ -214,7 +241,7 @@ const ClientReels = () => {
                 />
               ) : (
                 <>
-                  <Image src={reel.video} alt={reel.client} className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" />
+                  <Image width={400} height={400} src={reel.video} alt={reel.client} className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                   {/* Play Button */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -247,10 +274,10 @@ const PortfolioGallery = () => {
   ];
 
   const uiuxProjects = [
-    { title: "Sales Dashboard", img: "uixux4.webp", tag: "Web App" },
-    { title: "Homes", img: "uixux5.webp", tag: "Web App" },
-    { title: "Waffle", img: "uiux3.webp", tag: "Mobile App" },
-    { title: "Card Design", img: "uixu1.webp", tag: "Web App" }
+    { title: "Sales Dashboard", img: "/uixux4.webp", tag: "Web App" },
+    { title: "Homes", img: "/uixux5.webp", tag: "Web App" },
+    { title: "Waffle", img: "/uiux3.webp", tag: "Mobile App" },
+    { title: "Card Design", img: "/uixu1.webp", tag: "Web App" }
   ];
 
   return (
@@ -272,7 +299,7 @@ const PortfolioGallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {webProjects.map((project, i) => (
               <div key={i} className="group relative rounded-2xl overflow-hidden aspect-[4/3] border border-white/10 hover:-translate-y-2 transition-all duration-300 shadow-2xl">
-                <Image src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <Image width={400} height={400} src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100" />
                 <div className="absolute bottom-0 left-0 p-6">
                   <span className="text-xs font-bold text-purple-400 uppercase tracking-widest mb-2 block">{project.tag}</span>
@@ -295,7 +322,7 @@ const PortfolioGallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {uiuxProjects.map((project, i) => (
               <div key={i} className="group relative rounded-2xl overflow-hidden aspect-video border border-white/10 hover:-translate-y-2 transition-all duration-300 shadow-2xl">
-                <Image src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <Image width={400} height={400} src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100" />
                 <div className="absolute bottom-0 left-0 p-6">
                   <span className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-2 block">{project.tag}</span>

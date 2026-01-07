@@ -19,39 +19,43 @@ import {
   Youtube
 } from 'lucide-react';
 import Link from 'next/link';
-
-// --- MOCK COMPONENTS ---
-
-
-const Image = ({ src, alt, className, ...props }) => (
-  <img src={src} alt={alt} className={className} {...props} />
-);
+import Image from 'next/image';
 
 // --- UTILS & HOOKS ---
-const useIntersectionObserver = (options = {}) => {
+function useIntersectionObserver<T extends HTMLElement>(
+  options: IntersectionObserverInit = {}
+): [React.RefObject<T>, boolean] {
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const elementRef = useRef(null);
+  const elementRef = useRef<T>(null!);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsIntersecting(entry.isIntersecting);
-    }, { threshold: 0.1, ...options });
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsIntersecting(entry.isIntersecting),
+      { threshold: 0.1, ...options }
+    );
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
-
-    return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
-      }
-    };
+    if (elementRef.current) observer.observe(elementRef.current);
+    return () => observer.disconnect();
   }, [options]);
 
   return [elementRef, isIntersecting];
+}
+
+
+type NumberTickerProps = {
+  value: string | number;
+  direction?: 'up' | 'down';
+  delay?: number;
+  className?: string;
 };
 
-const NumberTicker = ({ value, direction = 'up', delay = 0, className }) => {
+const NumberTicker = ({
+  value,
+  direction = 'up',
+  delay = 0,
+  className,
+}: NumberTickerProps) => {
+
   const [ref, isVisible] = useIntersectionObserver();
   const [count, setCount] = useState(0);
 
@@ -172,6 +176,8 @@ const StorySection = () => {
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
               alt="Team collaboration"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              width={500}
+              height={400}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             <div className="absolute bottom-8 left-8 text-white">
@@ -321,6 +327,8 @@ const TeamSection = () => {
                   src={member.img}
                   alt={member.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                  width={400}
+                  height={533}
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />

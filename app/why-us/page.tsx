@@ -14,35 +14,44 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 
-// --- UTILS & HOOKS ---
 const useMousePosition = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
   useEffect(() => {
-    const updateMousePosition = (ev) => {
+    const updateMousePosition = (ev: MouseEvent) => {
       setMousePosition({ x: ev.clientX, y: ev.clientY });
     };
+
     window.addEventListener('mousemove', updateMousePosition);
     return () => window.removeEventListener('mousemove', updateMousePosition);
   }, []);
+
   return mousePosition;
 };
+
 
 // --- COMPONENTS ---
 
 
 
-// Light Mode Spotlight Card
-const SpotlightCard = ({ children, className = "" }) => {
-  const divRef = useRef(null);
+type SpotlightCardProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+const SpotlightCard = ({ children, className = "" }: SpotlightCardProps) => {
+  const divRef = useRef<HTMLDivElement | null>(null);
   const [isFocused, setIsFocused] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [opacity, setOpacity] = useState(0);
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!divRef.current || isFocused) return;
-    const div = divRef.current;
-    const rect = div.getBoundingClientRect();
-    setPosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+    const rect = divRef.current.getBoundingClientRect();
+    setPosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
   };
 
   const handleFocus = () => {
@@ -69,7 +78,7 @@ const SpotlightCard = ({ children, className = "" }) => {
       className={`relative rounded-3xl border border-gray-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow ${className}`}
     >
       <div
-        className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
+        className="pointer-events-none absolute -inset-px transition duration-300"
         style={{
           opacity,
           background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(168, 85, 247, 0.08), transparent 40%)`,
@@ -79,6 +88,7 @@ const SpotlightCard = ({ children, className = "" }) => {
     </div>
   );
 };
+
 
 const WhyUsSection = () => {
   const features = [
@@ -308,8 +318,12 @@ const WhyUsSection = () => {
 };
 
 
-// Custom Icon
-const FingerprintIcon = ({ className }) => (
+type IconProps = {
+  className?: string;
+};
+
+const FingerprintIcon = ({ className }: IconProps) => (
+
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M2 12C2 6.5 6.5 2 12 2a10 10 0 0 1 8 6" />
     <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" />

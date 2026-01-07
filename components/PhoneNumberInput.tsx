@@ -3,7 +3,15 @@
 import PhoneInput from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
 
-export default function PhoneNumberInput({ value, onChange }) {
+type PhoneNumberInputProps = {
+  value?: string
+  onChange: (value?: string) => void
+}
+
+export default function PhoneNumberInput({
+  value,
+  onChange,
+}: PhoneNumberInputProps) {
   return (
     <PhoneInput
       defaultCountry="US"
