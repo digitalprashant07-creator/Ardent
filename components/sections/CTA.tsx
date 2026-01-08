@@ -24,7 +24,7 @@ const CTA = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="inline-flex  mb-6 px-4 py-1 rounded-full border border-yellow-500/30 bg-yellow-500/10 text-yellow-400 text-sm font-medium">
           <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400 mr-2 mt-0.5" />
-          Limited Availability Q1 2025
+          Limited Availability Q1 2026
         </div>
 
         <h2 className="text-5xl md:text-7xl lg:text-7xl font-bold text-white mb-8 tracking-tighter leading-tight">

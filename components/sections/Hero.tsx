@@ -5,6 +5,14 @@ import { ArrowRight, Play, TrendingUp, Users } from "lucide-react";
 import Link from "next/link";
 
 const Hero = () => {
+
+  const founders = [
+  "/img1.jpg",
+  "/img2.jpg",
+  "/img3.jpg",
+  "/img4.jpg",
+];
+
   return (
     <section className="relative pt-24 pb-20 lg:pt-30 lg:pb-32 overflow-hidden bg-white">
       {/* Grid Pattern Background */}
@@ -26,7 +34,7 @@ const Hero = () => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
               </span>
               <span className="text-xs font-semibold text-gray-600 tracking-wide uppercase">
-                Accepting Clients for Q1 2025
+                Accepting Clients for Q1 2026
               </span>
             </div>
 
@@ -69,33 +77,27 @@ const Hero = () => {
 
             {/* Avatar Circles Mockup */}
             <div className="flex items-center gap-4 animate-fade-in-up delay-500">
-              <div className="flex -space-x-4">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 overflow-hidden"
-                  >
-                    {/* <Image
-                      src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${
-                        i * 34
-                      }`}
-                      alt="Avatar"
-                      width={40}
-                      height={40}
-                      className="w-full h-full object-cover"
-                    /> */}
-                    <img
-                      src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 34
-                        }`}
-                      alt="Avatar"
-                      className="w-10 h-10 object-cover"
-                    />
-                  </div>
-                ))}
-                <div className="w-10 h-10 rounded-full border-2 border-white bg-black text-white text-xs flex items-center justify-center font-bold">
-                  +40
-                </div>
-              </div>
+             <div className="flex -space-x-4">
+  {founders.map((src, index) => (
+    <div
+      key={index}
+      className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-100"
+    >
+      <Image
+        src={src}
+        alt="Founder"
+        width={40}
+        height={40}
+        className="w-full h-full object-cover"
+        priority
+      />
+    </div>
+  ))}
+
+  <div className="w-10 h-10 rounded-full border-2 border-white bg-black text-white text-xs flex items-center justify-center font-bold">
+    +40
+  </div>
+</div>
               <div className="text-sm text-gray-500 text-left">
                 <span className="font-bold text-black">
                   Trusted by founders

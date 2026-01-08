@@ -31,8 +31,7 @@ const Footer = () => {
             <div className="flex gap-4 pt-4">
               {/* Social Icons */}
               {[
-                { Icon: Linkedin, href: "#" },
-                { Icon: Twitter, href: "#" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/ardent-leap/" },
                 { Icon: Instagram, href: "https://www.instagram.com/ardentandleap?igsh=MTRvYTdjenV5MnEzag%3D%3D&utm_source=qr" },
                 { Icon: Youtube, href: "https://www.youtube.com/@ArdentLeap" }
               ].map(({ Icon, href }, i) => (

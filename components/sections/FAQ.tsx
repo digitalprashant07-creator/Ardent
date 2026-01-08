@@ -15,7 +15,7 @@ const FAQ = () => {
     },
     {
       q: "What additional services do you offer?",
-      a: "Beyond social media marketing, we offer content creation, web design & development, influencer marketing, and professional photography services.",
+      a: "Beyond social media marketing, we offer content creation, web design & development.",
     },
     {
       q: "How are your prices structured?",

@@ -162,11 +162,13 @@ const WhyUsSection = () => {
               Why Clients Trust Us
             </div>
             <h2 className="text-5xl md:text-5xl font-bold text-gray-900 tracking-tighter leading-tight mb-8">
-              We don't just create content. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600">
-                We architect authority.
-              </span>
-            </h2>
+  We don’t just create content, <br/>{"Authority -> Leads -> Scale"}
+  <br />
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600">
+    We architect authority.
+  </span>
+</h2>
+
             <p className="text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto">
               Choose Ardent & Leap if you want your brand to be <span className="text-black font-semibold">unmistakable, influential, and impactful</span> — not average.
             </p>

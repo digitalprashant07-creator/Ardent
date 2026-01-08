@@ -28,6 +28,8 @@ import {
   Twitter,
   Menu
 } from "lucide-react";
+import { usePathname } from "next/navigation";
+
 
 
 /* ================= NAVBAR ================= */
@@ -35,6 +37,11 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Portfolio");
+
+const pathname = usePathname();
+const isBlacklayout = pathname === "/about-us" || pathname === "/portfolio";
+
+
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -55,6 +62,15 @@ const handleNavClick = (name: string) => {
   setIsOpen(false);
 };
 
+const mobileLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about-us" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Services", href: "/services" },
+  { label: "Why Us", href: "/why-us" },
+  { label: "Contact", href: "/contact" },
+];
+
 
 
   return (
@@ -67,18 +83,21 @@ const handleNavClick = (name: string) => {
         <div className="container mx-auto px-6 flex justify-between items-center">
           {/* LOGO */}
           <Link
-            href="/"
-            className="font-bold text-2xl tracking-tighter flex items-center gap-2 text-black"
-          >
-            <img
-              src="/dark.png"
-              alt="logo"
-              className="w-60"
-            />
-          </Link>
+  href="/"
+  className={`flex items-center gap-2 shrink-0 transition-opacity ${
+    isOpen ? "opacity-0" : "opacity-100"
+  }`}
+>
+  <img
+    src={isBlacklayout && !scrolled ? "/light.png" : "/dark.png"}
+    alt="logo"
+    className="w-40 md:w-60 max-w-full"
+  />
+</Link>
+
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600 z-99999">
             <Link href="/about-us" className="hover:text-black">About Us</Link>
             <Link href="/portfolio" className="hover:text-black">Portfolio</Link>
 
@@ -143,23 +162,30 @@ const handleNavClick = (name: string) => {
 
         {/* Menu Items */}
         <div className="flex flex-col items-center justify-center h-full space-y-8 p-6">
-          {["Home", "About", "Portfolio", "Services"].map((item) => (
-            <Link
-              key={item}
-              href="#"
-              onClick={() => handleNavClick(item)}
-              className={`text-3xl transition-colors ${activeLink === item
-                ? "text-white font-bold"
-                : "text-gray-500 hover:text-white"
-                }`}
-            >
-              {item}
-            </Link>
-          ))}
+         {mobileLinks.map((item) => (
+  <Link
+    key={item.label}
+    href={item.href}
+    onClick={() => handleNavClick(item.label)}
+    className={`text-3xl transition-colors ${
+      pathname === item.href
+        ? "text-white font-bold"
+        : "text-gray-500 hover:text-white"
+    }`}
+  >
+    {item.label}
+  </Link>
+))}
 
-          <button className="bg-white text-black px-8 py-4 rounded-xl font-bold">
-            Book a Strategy Call
-          </button>
+
+        <a
+  href="https://calendly.com/ardentandleap/30min"
+  target="_blank"
+  className="bg-white text-black px-8 py-4 rounded-xl font-bold"
+>
+  Book a Strategy Call
+</a>
+
 
           <div className="flex gap-6 text-gray-400 pt-10">
             <Twitter />

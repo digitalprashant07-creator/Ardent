@@ -226,7 +226,7 @@ const BentoGrid = () => {
               </h3>
               <p className="text-gray-500 text-base leading-relaxed">
                 Defining your niche, value proposition, and visual identity with
-                absolute clarity. We a "Why You?" before anyone else has to ask.
+                absolute clarity. We show before anyone else has to ask.
               </p>
             </div>
           </div>
@@ -244,7 +244,7 @@ const BentoGrid = () => {
                 Content Strategy
               </h3>
               <p className="text-gray-500 text-base leading-relaxed">
-                Your blueprint for LinkedIn & Twitter. We build content buckets,
+                Your blueprint for social media. We build content buckets,
                 hook libraries, and specific formats tailored to your voice.
               </p>
             </div>
