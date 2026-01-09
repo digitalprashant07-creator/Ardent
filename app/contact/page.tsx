@@ -175,7 +175,7 @@ const ContactInfo = () => {
             <p className="text-xs font-bold text-slate-400 uppercase tracking-wider group-hover:text-blue-600 transition-colors">
               HQ
             </p>
-            <p className="text-lg font-medium">Kerala, India</p>
+            <p className="text-lg font-medium">Bangalore, India</p>
           </div>
         </div>
       </div>

@@ -399,30 +399,29 @@ const founders = [
 
             {/* Avatar Circles Mockup */}
             <div className="flex items-center gap-4 animate-fade-in-up delay-500">
-             <div className="flex -space-x-4">
-  {founders.map((src, index) => (
-    <div
-      key={index}
-      className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-100"
-    >
-      <Image
-        src={src}
-        alt="Founder"
-        width={40}
-        height={40}
-        className="w-full h-full object-cover"
-        priority
-      />
-    </div>
-  ))}
-
-  <div className="w-10 h-10 rounded-full border-2 border-white bg-black text-white text-xs flex items-center justify-center font-bold">
-    +40
-  </div>
-</div>
+              <div className="flex -space-x-4">
+                {[1, 2, 3, 4].map((i) => (
+                  <div
+                    key={i}
+                    className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 overflow-hidden"
+                  >
+                    <Image
+                      src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i * 34
+                        }`}
+                      alt="Avatar"
+                      width={40}
+                      height={40}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+                <div className="w-10 h-10 rounded-full border-2 border-white bg-black text-white text-xs flex items-center justify-center font-bold">
+                  +40
+                </div>
+              </div>
               <div className="text-sm text-gray-500 text-left">
                 <span className="font-bold text-black">
-                  Trusted by founders ss
+                  Trusted by founders
                 </span>{" "}
                 <br />
                 from YC, Techstars & more.

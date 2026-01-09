@@ -162,12 +162,29 @@ const WhyUsSection = () => {
               Why Clients Trust Us
             </div>
             <h2 className="text-5xl md:text-5xl font-bold text-gray-900 tracking-tighter leading-tight mb-8">
-  We don’t just create content, <br/>{"Authority -> Leads -> Scale"}
-  <br />
-  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600">
-    We architect authority.
-  </span>
-</h2>
+              We don’t just create content, <br />
+
+              <div className="flex items-center justify-center gap-3 mt-6 mb-6 flex-wrap">
+                <div className="flex items-center gap-2">
+                  <Trophy className="w-12 h-12 text-purple-600" />
+                  <span className="text-2xl font-bold text-gray-400">Authority</span>
+                </div>
+                <ArrowRight className="w-8 h-8 text-gray-400" />
+                <div className="flex items-center gap-2">
+                  <Target className="w-12 h-12 text-blue-600" />
+                  <span className="text-2xl font-bold text-gray-400">Leads</span>
+                </div>
+                <ArrowRight className="w-8 h-8 text-gray-400" />
+                <div className="flex items-center gap-2">
+                  <Zap className="w-12 h-12 text-orange-600" />
+                  <span className="text-2xl font-bold text-gray-400">Scale</span>
+                </div>
+              </div>
+              
+              <span className="text-transparent mt-4 bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600">
+                We architect authority.
+              </span>
+            </h2>
 
             <p className="text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto">
               Choose Ardent & Leap if you want your brand to be <span className="text-black font-semibold">unmistakable, influential, and impactful</span> — not average.

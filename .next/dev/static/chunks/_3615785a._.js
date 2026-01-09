@@ -13,6 +13,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-x.js [app-client] (ecmascript) <export default as XCircle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trophy.js [app-client] (ecmascript) <export default as Trophy>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/target.js [app-client] (ecmascript) <export default as Target>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 ;
@@ -240,21 +241,110 @@ const WhyUsSection = ()=>{
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/app/why-us/page.tsx",
                                                 lineNumber: 165,
-                                                columnNumber: 33
+                                                columnNumber: 45
                                             }, ("TURBOPACK compile-time value", void 0)),
-                                            "Authority -> Leads -> Scale",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center justify-center gap-3 mt-6 mb-6 flex-wrap",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"], {
+                                                                className: "w-12 h-12 text-purple-600"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/why-us/page.tsx",
+                                                                lineNumber: 169,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-2xl font-bold text-gray-400",
+                                                                children: "Authority"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/why-us/page.tsx",
+                                                                lineNumber: 170,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/why-us/page.tsx",
+                                                        lineNumber: 168,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                        className: "w-8 h-8 text-gray-400"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/why-us/page.tsx",
+                                                        lineNumber: 172,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"], {
+                                                                className: "w-12 h-12 text-blue-600"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/why-us/page.tsx",
+                                                                lineNumber: 174,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-2xl font-bold text-gray-400",
+                                                                children: "Leads"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/why-us/page.tsx",
+                                                                lineNumber: 175,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/why-us/page.tsx",
+                                                        lineNumber: 173,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                        className: "w-8 h-8 text-gray-400"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/why-us/page.tsx",
+                                                        lineNumber: 177,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
+                                                                className: "w-12 h-12 text-orange-600"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/why-us/page.tsx",
+                                                                lineNumber: 179,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-2xl font-bold text-gray-400",
+                                                                children: "Scale"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/why-us/page.tsx",
+                                                                lineNumber: 180,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/why-us/page.tsx",
+                                                        lineNumber: 178,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 166,
-                                                columnNumber: 3
+                                                lineNumber: 167,
+                                                columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600",
+                                                className: "text-transparent mt-4 bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600",
                                                 children: "We architect authority."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 167,
-                                                columnNumber: 3
+                                                lineNumber: 184,
+                                                columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
@@ -271,14 +361,14 @@ const WhyUsSection = ()=>{
                                                 children: "unmistakable, influential, and impactful"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 173,
+                                                lineNumber: 190,
                                                 columnNumber: 65
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             " — not average."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/why-us/page.tsx",
-                                        lineNumber: 172,
+                                        lineNumber: 189,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
@@ -296,7 +386,7 @@ const WhyUsSection = ()=>{
                                                 className: `absolute inset-0 bg-gradient-to-br ${feat.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`
                                             }, void 0, false, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 181,
+                                                lineNumber: 198,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -307,7 +397,7 @@ const WhyUsSection = ()=>{
                                                         children: feat.icon
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 183,
+                                                        lineNumber: 200,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -315,7 +405,7 @@ const WhyUsSection = ()=>{
                                                         children: feat.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 186,
+                                                        lineNumber: 203,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -323,7 +413,7 @@ const WhyUsSection = ()=>{
                                                         children: feat.desc
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 187,
+                                                        lineNumber: 204,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -334,30 +424,30 @@ const WhyUsSection = ()=>{
                                                                 className: "w-4 h-4 ml-2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 189,
+                                                                lineNumber: 206,
                                                                 columnNumber: 31
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 188,
+                                                        lineNumber: 205,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 182,
+                                                lineNumber: 199,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, i, true, {
                                         fileName: "[project]/app/why-us/page.tsx",
-                                        lineNumber: 180,
+                                        lineNumber: 197,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
                                 fileName: "[project]/app/why-us/page.tsx",
-                                lineNumber: 178,
+                                lineNumber: 195,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
@@ -379,21 +469,21 @@ const WhyUsSection = ()=>{
                         className: "absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/app/why-us/page.tsx",
-                        lineNumber: 202,
+                        lineNumber: 219,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-1/4 left-0 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/app/why-us/page.tsx",
-                        lineNumber: 205,
+                        lineNumber: 222,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/app/why-us/page.tsx",
-                        lineNumber: 206,
+                        lineNumber: 223,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -411,14 +501,14 @@ const WhyUsSection = ()=>{
                                                 children: "Difference"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 211,
+                                                lineNumber: 228,
                                                 columnNumber: 97
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             " is in the Details."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/why-us/page.tsx",
-                                        lineNumber: 211,
+                                        lineNumber: 228,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -426,13 +516,13 @@ const WhyUsSection = ()=>{
                                         children: "See exactly why leaders choose us over traditional agencies."
                                     }, void 0, false, {
                                         fileName: "[project]/app/why-us/page.tsx",
-                                        lineNumber: 212,
+                                        lineNumber: 229,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/why-us/page.tsx",
-                                lineNumber: 210,
+                                lineNumber: 227,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -450,12 +540,12 @@ const WhyUsSection = ()=>{
                                                             className: "w-5 h-5 text-red-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/why-us/page.tsx",
-                                                            lineNumber: 221,
+                                                            lineNumber: 238,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 220,
+                                                        lineNumber: 237,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -463,13 +553,13 @@ const WhyUsSection = ()=>{
                                                         children: "Average Agencies"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 223,
+                                                        lineNumber: 240,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 219,
+                                                lineNumber: 236,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -479,7 +569,7 @@ const WhyUsSection = ()=>{
                                                         className: "absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-emerald-500 shadow-[0_0_15px_#4ade80]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 226,
+                                                        lineNumber: 243,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -488,12 +578,12 @@ const WhyUsSection = ()=>{
                                                             className: "w-5 h-5 text-green-400"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/why-us/page.tsx",
-                                                            lineNumber: 228,
+                                                            lineNumber: 245,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 227,
+                                                        lineNumber: 244,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -501,19 +591,19 @@ const WhyUsSection = ()=>{
                                                         children: "Ardent & Leap"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 230,
+                                                        lineNumber: 247,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 225,
+                                                lineNumber: 242,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/why-us/page.tsx",
-                                        lineNumber: 218,
+                                        lineNumber: 235,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -528,7 +618,7 @@ const WhyUsSection = ()=>{
                                                                 className: "w-5 h-5 text-red-500/30 flex-shrink-0 mt-1"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 240,
+                                                                lineNumber: 257,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -536,13 +626,13 @@ const WhyUsSection = ()=>{
                                                                 children: row.other
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 241,
+                                                                lineNumber: 258,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 239,
+                                                        lineNumber: 256,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -554,12 +644,12 @@ const WhyUsSection = ()=>{
                                                                     className: "w-5 h-5 text-green-500"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/why-us/page.tsx",
-                                                                    lineNumber: 246,
+                                                                    lineNumber: 263,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 245,
+                                                                lineNumber: 262,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -567,42 +657,42 @@ const WhyUsSection = ()=>{
                                                                 children: row.us
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 248,
+                                                                lineNumber: 265,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 244,
+                                                        lineNumber: 261,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, i, true, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 237,
+                                                lineNumber: 254,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)))
                                     }, void 0, false, {
                                         fileName: "[project]/app/why-us/page.tsx",
-                                        lineNumber: 235,
+                                        lineNumber: 252,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/why-us/page.tsx",
-                                lineNumber: 216,
+                                lineNumber: 233,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/why-us/page.tsx",
-                        lineNumber: 208,
+                        lineNumber: 225,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/why-us/page.tsx",
-                lineNumber: 200,
+                lineNumber: 217,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -616,7 +706,7 @@ const WhyUsSection = ()=>{
                                 className: "absolute inset-0 bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_50%,#a855f7_100%)] animate-[spin_4s_linear_infinite] opacity-100 transition-opacity duration-500"
                             }, void 0, false, {
                                 fileName: "[project]/app/why-us/page.tsx",
-                                lineNumber: 263,
+                                lineNumber: 280,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -626,14 +716,14 @@ const WhyUsSection = ()=>{
                                         className: "absolute inset-0 bg-[linear-gradient(to_right,#f3f4f6_1px,transparent_1px),linear-gradient(to_bottom,#f3f4f6_1px,transparent_1px)] bg-[size:2rem_2rem] opacity-70 pointer-events-none"
                                     }, void 0, false, {
                                         fileName: "[project]/app/why-us/page.tsx",
-                                        lineNumber: 267,
+                                        lineNumber: 284,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "absolute top-0 right-0 w-[400px] h-[400px] bg-purple-100/60 rounded-full blur-[80px] pointer-events-none mix-blend-multiply"
                                     }, void 0, false, {
                                         fileName: "[project]/app/why-us/page.tsx",
-                                        lineNumber: 270,
+                                        lineNumber: 287,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -647,7 +737,7 @@ const WhyUsSection = ()=>{
                                                             "Stop Settling for ",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 275,
+                                                                lineNumber: 292,
                                                                 columnNumber: 39
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             " ",
@@ -656,13 +746,13 @@ const WhyUsSection = ()=>{
                                                                 children: "Average."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 275,
+                                                                lineNumber: 292,
                                                                 columnNumber: 46
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 274,
+                                                        lineNumber: 291,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -670,7 +760,7 @@ const WhyUsSection = ()=>{
                                                         children: "Fill out this quick form to book your free strategy audit. We'll map out your path to authority."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 277,
+                                                        lineNumber: 294,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -683,14 +773,14 @@ const WhyUsSection = ()=>{
                                                                         className: "w-4 h-4 text-purple-600"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                                        lineNumber: 281,
+                                                                        lineNumber: 298,
                                                                         columnNumber: 61
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     " Free 15-min consultation"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 281,
+                                                                lineNumber: 298,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -700,14 +790,14 @@ const WhyUsSection = ()=>{
                                                                         className: "w-4 h-4 text-purple-600"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                                        lineNumber: 282,
+                                                                        lineNumber: 299,
                                                                         columnNumber: 61
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     " No obligation audit"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 282,
+                                                                lineNumber: 299,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -717,26 +807,26 @@ const WhyUsSection = ()=>{
                                                                         className: "w-4 h-4 text-purple-600"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                                        lineNumber: 283,
+                                                                        lineNumber: 300,
                                                                         columnNumber: 61
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     " Actionable insights"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 283,
+                                                                lineNumber: 300,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 280,
+                                                        lineNumber: 297,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 273,
+                                                lineNumber: 290,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -750,7 +840,7 @@ const WhyUsSection = ()=>{
                                                         value: "false"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 292,
+                                                        lineNumber: 309,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -759,7 +849,7 @@ const WhyUsSection = ()=>{
                                                         value: "https://calendly.com/ardentandleap/30min"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 293,
+                                                        lineNumber: 310,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -768,7 +858,7 @@ const WhyUsSection = ()=>{
                                                         value: "New Audit Request - Ardent & Leap"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 294,
+                                                        lineNumber: 311,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -779,7 +869,7 @@ const WhyUsSection = ()=>{
                                                                 children: "Name"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 297,
+                                                                lineNumber: 314,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -790,13 +880,13 @@ const WhyUsSection = ()=>{
                                                                 className: "w-full bg-white/80 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all placeholder:text-gray-400 backdrop-blur-sm"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 298,
+                                                                lineNumber: 315,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 296,
+                                                        lineNumber: 313,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -807,7 +897,7 @@ const WhyUsSection = ()=>{
                                                                 children: "Work Email"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 301,
+                                                                lineNumber: 318,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -818,13 +908,13 @@ const WhyUsSection = ()=>{
                                                                 className: "w-full bg-white/80 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all placeholder:text-gray-400 backdrop-blur-sm"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 302,
+                                                                lineNumber: 319,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 300,
+                                                        lineNumber: 317,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -835,7 +925,7 @@ const WhyUsSection = ()=>{
                                                                 children: "Website / LinkedIn"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 305,
+                                                                lineNumber: 322,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -846,13 +936,13 @@ const WhyUsSection = ()=>{
                                                                 className: "w-full bg-white/80 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all placeholder:text-gray-400 backdrop-blur-sm"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 306,
+                                                                lineNumber: 323,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 304,
+                                                        lineNumber: 321,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -864,47 +954,47 @@ const WhyUsSection = ()=>{
                                                                 className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                                lineNumber: 310,
+                                                                lineNumber: 327,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/why-us/page.tsx",
-                                                        lineNumber: 308,
+                                                        lineNumber: 325,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/why-us/page.tsx",
-                                                lineNumber: 287,
+                                                lineNumber: 304,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/why-us/page.tsx",
-                                        lineNumber: 272,
+                                        lineNumber: 289,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/why-us/page.tsx",
-                                lineNumber: 265,
+                                lineNumber: 282,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/why-us/page.tsx",
-                        lineNumber: 261,
+                        lineNumber: 278,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/app/why-us/page.tsx",
-                    lineNumber: 260,
+                    lineNumber: 277,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/app/why-us/page.tsx",
-                lineNumber: 259,
+                lineNumber: 276,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -925,55 +1015,55 @@ const FingerprintIcon = ({ className })=>/*#__PURE__*/ (0, __TURBOPACK__imported
                 d: "M2 12C2 6.5 6.5 2 12 2a10 10 0 0 1 8 6"
             }, void 0, false, {
                 fileName: "[project]/app/why-us/page.tsx",
-                lineNumber: 330,
+                lineNumber: 347,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2"
             }, void 0, false, {
                 fileName: "[project]/app/why-us/page.tsx",
-                lineNumber: 331,
+                lineNumber: 348,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M8.65 22c.21-.66.45-1.32.57-2"
             }, void 0, false, {
                 fileName: "[project]/app/why-us/page.tsx",
-                lineNumber: 332,
+                lineNumber: 349,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M9 6.8a6 6 0 0 1 9 5.2c0 .47 0 1.17-.02 2"
             }, void 0, false, {
                 fileName: "[project]/app/why-us/page.tsx",
-                lineNumber: 333,
+                lineNumber: 350,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M16 22c-.73-2.77-1.35-5.5-2-8"
             }, void 0, false, {
                 fileName: "[project]/app/why-us/page.tsx",
-                lineNumber: 334,
+                lineNumber: 351,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M20 20.5c.38-1.8.6-4.2.6-6.36a10 10 0 0 0-5.52-8.59"
             }, void 0, false, {
                 fileName: "[project]/app/why-us/page.tsx",
-                lineNumber: 335,
+                lineNumber: 352,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12 12a3 3 0 0 1 2 2.7"
             }, void 0, false, {
                 fileName: "[project]/app/why-us/page.tsx",
-                lineNumber: 336,
+                lineNumber: 353,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/why-us/page.tsx",
-        lineNumber: 329,
+        lineNumber: 346,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 _c2 = FingerprintIcon;
@@ -982,12 +1072,12 @@ function WhyUsPage() {
         className: "min-h-screen bg-black text-slate-900 font-sans selection:bg-purple-500 selection:text-white overflow-x-hidden",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(WhyUsSection, {}, void 0, false, {
             fileName: "[project]/app/why-us/page.tsx",
-            lineNumber: 343,
+            lineNumber: 360,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/why-us/page.tsx",
-        lineNumber: 342,
+        lineNumber: 359,
         columnNumber: 5
     }, this);
 }

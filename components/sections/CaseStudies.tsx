@@ -85,7 +85,7 @@ const CaseStudies = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "Flute Teacher",
+                title: "Creator",
                 before: "9000 Followers",
                 after: "200k Followers",
                 img: "/2.png",
@@ -93,7 +93,7 @@ const CaseStudies = () => {
                 growth: "+3,000%",
               },
               {
-                title: "Fitness Coach",
+                title: "Fitness Center ",
                 before: "168 Followers",
                 after: "1300 Followers",
                 img: "/3.png",
@@ -101,7 +101,7 @@ const CaseStudies = () => {
                 growth: "+2,150%",
               },
               {
-                title: "Personal Profile",
+                title: "Personal Branding Coach",
                 before: "100 Followers",
                 after: "10k Followers",
                 img: "/5.png",

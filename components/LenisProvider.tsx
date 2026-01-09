@@ -2,6 +2,7 @@
 
 import { ReactNode, useEffect } from 'react'
 import Lenis from '@studio-freight/lenis'
+import { clear } from 'console'
 
 type Props = {
   children: ReactNode
