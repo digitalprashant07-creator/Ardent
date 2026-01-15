@@ -301,9 +301,8 @@ const ValuesSection = () => {
 // 5. Team Section (Human Face)
 const TeamSection = () => {
   const team = [
-    { name: "Alex Ardent", role: "Founder & Strategy", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop" },
-    { name: "Sarah Leap", role: "Creative Director", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop" },
-    { name: "James Chen", role: "Head of Tech", img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop" },
+    { name: "Joseph Dayas", role: "Founder & Strategy", img: "/jd.png" },
+    { name: "Alwin Saji", role: "Creative Director", img: "/alwi.png" },
   ];
 
   return (

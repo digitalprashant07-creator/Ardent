@@ -10,6 +10,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/play.js [app-client] (ecmascript) <export default as Play>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/external-link.js [app-client] (ecmascript) <export default as ExternalLink>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevrons$2d$left$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronsLeftRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevrons-left-right.js [app-client] (ecmascript) <export default as ChevronsLeftRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$monitor$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Monitor$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/monitor.js [app-client] (ecmascript) <export default as Monitor>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$panels$2d$top$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Layout$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/panels-top-left.js [app-client] (ecmascript) <export default as Layout>");
@@ -595,19 +596,40 @@ _c3 = ClientReels;
 const PortfolioGallery = ()=>{
     const webProjects = [
         {
-            title: "Velox SaaS",
-            img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
-            tag: "SaaS Platform"
+            title: "IT Networking",
+            img: "/portfolio12.png",
+            tag: "Website",
+            link: "https://globalxperts-one.vercel.app/"
+        },
+        {
+            title: "Community Tracker",
+            img: "/portfolio13.png",
+            tag: "Website",
+            link: "https://www.communitytracker.ai/"
+        },
+        {
+            title: "Dry Dash",
+            img: "/portfolio14.png",
+            tag: "Website",
+            link: "https://drydash.vercel.app/"
+        },
+        {
+            title: "Playbook",
+            img: "/portfolio15.png",
+            tag: "Landing Page",
+            link: "https://playbooksystems.io/"
         },
         {
             title: "Horizon Ventures",
             img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
-            tag: "Corporate Site"
+            tag: "Corporate Site",
+            link: ""
         },
         {
             title: "Echo Audio",
             img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2574&auto=format&fit=crop",
-            tag: "Product Landing"
+            tag: "Product Landing",
+            link: ""
         }
     ];
     const uiuxProjects = [
@@ -639,7 +661,7 @@ const PortfolioGallery = ()=>{
                 className: "absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/app/portfolio/page.tsx",
-                lineNumber: 286,
+                lineNumber: 289,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -657,12 +679,12 @@ const PortfolioGallery = ()=>{
                                             className: "w-6 h-6 text-purple-400"
                                         }, void 0, false, {
                                             fileName: "[project]/app/portfolio/page.tsx",
-                                            lineNumber: 294,
+                                            lineNumber: 297,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/app/portfolio/page.tsx",
-                                        lineNumber: 293,
+                                        lineNumber: 296,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -670,19 +692,22 @@ const PortfolioGallery = ()=>{
                                         children: "Web Design"
                                     }, void 0, false, {
                                         fileName: "[project]/app/portfolio/page.tsx",
-                                        lineNumber: 296,
+                                        lineNumber: 299,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/portfolio/page.tsx",
-                                lineNumber: 292,
+                                lineNumber: 295,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grid grid-cols-1 md:grid-cols-2 gap-8",
-                                children: webProjects.map((project, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "group relative rounded-2xl overflow-hidden aspect-[4/3] border border-white/10 hover:-translate-y-2 transition-all duration-300 shadow-2xl",
+                                children: webProjects.map((project, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: project.link,
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        className: "group relative rounded-2xl overflow-hidden aspect-[4/3] border border-white/10 hover:-translate-y-2 transition-all duration-300 shadow-2xl cursor-pointer",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 width: 400,
@@ -692,14 +717,28 @@ const PortfolioGallery = ()=>{
                                                 className: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/portfolio/page.tsx",
-                                                lineNumber: 302,
+                                                lineNumber: 305,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/portfolio/page.tsx",
-                                                lineNumber: 303,
+                                                lineNumber: 306,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
+                                                    className: "w-6 h-6 text-white"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/portfolio/page.tsx",
+                                                    lineNumber: 308,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/portfolio/page.tsx",
+                                                lineNumber: 307,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -710,7 +749,7 @@ const PortfolioGallery = ()=>{
                                                         children: project.tag
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/portfolio/page.tsx",
-                                                        lineNumber: 305,
+                                                        lineNumber: 311,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -718,30 +757,30 @@ const PortfolioGallery = ()=>{
                                                         children: project.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/portfolio/page.tsx",
-                                                        lineNumber: 306,
+                                                        lineNumber: 312,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/portfolio/page.tsx",
-                                                lineNumber: 304,
+                                                lineNumber: 310,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, i, true, {
                                         fileName: "[project]/app/portfolio/page.tsx",
-                                        lineNumber: 301,
+                                        lineNumber: 304,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
                                 fileName: "[project]/app/portfolio/page.tsx",
-                                lineNumber: 299,
+                                lineNumber: 302,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/portfolio/page.tsx",
-                        lineNumber: 291,
+                        lineNumber: 294,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -756,12 +795,12 @@ const PortfolioGallery = ()=>{
                                             className: "w-6 h-6 text-blue-400"
                                         }, void 0, false, {
                                             fileName: "[project]/app/portfolio/page.tsx",
-                                            lineNumber: 317,
+                                            lineNumber: 323,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/app/portfolio/page.tsx",
-                                        lineNumber: 316,
+                                        lineNumber: 322,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -769,13 +808,13 @@ const PortfolioGallery = ()=>{
                                         children: "UI/UX Design"
                                     }, void 0, false, {
                                         fileName: "[project]/app/portfolio/page.tsx",
-                                        lineNumber: 319,
+                                        lineNumber: 325,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/portfolio/page.tsx",
-                                lineNumber: 315,
+                                lineNumber: 321,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -791,14 +830,14 @@ const PortfolioGallery = ()=>{
                                                 className: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/portfolio/page.tsx",
-                                                lineNumber: 325,
+                                                lineNumber: 331,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/portfolio/page.tsx",
-                                                lineNumber: 326,
+                                                lineNumber: 332,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -809,7 +848,7 @@ const PortfolioGallery = ()=>{
                                                         children: project.tag
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/portfolio/page.tsx",
-                                                        lineNumber: 328,
+                                                        lineNumber: 334,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -817,42 +856,42 @@ const PortfolioGallery = ()=>{
                                                         children: project.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/portfolio/page.tsx",
-                                                        lineNumber: 329,
+                                                        lineNumber: 335,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/portfolio/page.tsx",
-                                                lineNumber: 327,
+                                                lineNumber: 333,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, i, true, {
                                         fileName: "[project]/app/portfolio/page.tsx",
-                                        lineNumber: 324,
+                                        lineNumber: 330,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
                                 fileName: "[project]/app/portfolio/page.tsx",
-                                lineNumber: 322,
+                                lineNumber: 328,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/portfolio/page.tsx",
-                        lineNumber: 314,
+                        lineNumber: 320,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/portfolio/page.tsx",
-                lineNumber: 288,
+                lineNumber: 291,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/portfolio/page.tsx",
-        lineNumber: 284,
+        lineNumber: 287,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -865,21 +904,21 @@ const CallToAction = ()=>{
                 className: "absolute inset-0 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-60 pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/app/portfolio/page.tsx",
-                lineNumber: 345,
+                lineNumber: 351,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-0 right-0 w-[600px] h-[600px] bg-purple-100/60 rounded-full blur-[120px] pointer-events-none mix-blend-multiply"
             }, void 0, false, {
                 fileName: "[project]/app/portfolio/page.tsx",
-                lineNumber: 348,
+                lineNumber: 354,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-100/60 rounded-full blur-[120px] pointer-events-none mix-blend-multiply"
             }, void 0, false, {
                 fileName: "[project]/app/portfolio/page.tsx",
-                lineNumber: 349,
+                lineNumber: 355,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -890,7 +929,7 @@ const CallToAction = ()=>{
                         children: "Ready to start your project?"
                     }, void 0, false, {
                         fileName: "[project]/app/portfolio/page.tsx",
-                        lineNumber: 352,
+                        lineNumber: 358,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -898,7 +937,7 @@ const CallToAction = ()=>{
                         children: "We pick our partners carefully. If you're ready to build something that lasts, let's talk."
                     }, void 0, false, {
                         fileName: "[project]/app/portfolio/page.tsx",
-                        lineNumber: 353,
+                        lineNumber: 359,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -908,7 +947,7 @@ const CallToAction = ()=>{
                                 className: "absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
                             }, void 0, false, {
                                 fileName: "[project]/app/portfolio/page.tsx",
-                                lineNumber: 357,
+                                lineNumber: 363,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -923,36 +962,36 @@ const CallToAction = ()=>{
                                             className: "ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"
                                         }, void 0, false, {
                                             fileName: "[project]/app/portfolio/page.tsx",
-                                            lineNumber: 360,
+                                            lineNumber: 366,
                                             columnNumber: 30
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/portfolio/page.tsx",
-                                    lineNumber: 359,
+                                    lineNumber: 365,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/app/portfolio/page.tsx",
-                                lineNumber: 358,
+                                lineNumber: 364,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/portfolio/page.tsx",
-                        lineNumber: 356,
+                        lineNumber: 362,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/portfolio/page.tsx",
-                lineNumber: 351,
+                lineNumber: 357,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/portfolio/page.tsx",
-        lineNumber: 343,
+        lineNumber: 349,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -963,28 +1002,28 @@ function PortfolioPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HeroSection, {}, void 0, false, {
                 fileName: "[project]/app/portfolio/page.tsx",
-                lineNumber: 372,
+                lineNumber: 378,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ClientReels, {}, void 0, false, {
                 fileName: "[project]/app/portfolio/page.tsx",
-                lineNumber: 373,
+                lineNumber: 379,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PortfolioGallery, {}, void 0, false, {
                 fileName: "[project]/app/portfolio/page.tsx",
-                lineNumber: 374,
+                lineNumber: 380,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CallToAction, {}, void 0, false, {
                 fileName: "[project]/app/portfolio/page.tsx",
-                lineNumber: 375,
+                lineNumber: 381,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/portfolio/page.tsx",
-        lineNumber: 371,
+        lineNumber: 377,
         columnNumber: 5
     }, this);
 }

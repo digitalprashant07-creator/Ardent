@@ -268,9 +268,12 @@ const scroll = (direction: 'left' | 'right') => {
 
 const PortfolioGallery = () => {
   const webProjects = [
-    { title: "Velox SaaS", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop", tag: "SaaS Platform" },
-    { title: "Horizon Ventures", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop", tag: "Corporate Site" },
-    { title: "Echo Audio", img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2574&auto=format&fit=crop", tag: "Product Landing" },
+    { title: "IT Networking", img: "/portfolio12.png", tag: "Website", link: "https://globalxperts-one.vercel.app/" },
+    { title: "Community Tracker", img: "/portfolio13.png", tag: "Website", link: "https://www.communitytracker.ai/" },
+    { title: "Dry Dash", img: "/portfolio14.png", tag: "Website", link: "https://drydash.vercel.app/" },
+    { title: "Playbook", img: "/portfolio15.png", tag: "Landing Page", link: "https://playbooksystems.io/" },
+    { title: "Horizon Ventures", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop", tag: "Corporate Site", link: "" },
+    { title: "Echo Audio", img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2574&auto=format&fit=crop", tag: "Product Landing", link: "" },
   ];
 
   const uiuxProjects = [
@@ -298,14 +301,17 @@ const PortfolioGallery = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {webProjects.map((project, i) => (
-              <div key={i} className="group relative rounded-2xl overflow-hidden aspect-[4/3] border border-white/10 hover:-translate-y-2 transition-all duration-300 shadow-2xl">
+              <a key={i} href={project.link} target="_blank" rel="noopener noreferrer" className="group relative rounded-2xl overflow-hidden aspect-[4/3] border border-white/10 hover:-translate-y-2 transition-all duration-300 shadow-2xl cursor-pointer">
                 <Image width={400} height={400} src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <ExternalLink className="w-6 h-6 text-white" />
+                </div>
                 <div className="absolute bottom-0 left-0 p-6">
                   <span className="text-xs font-bold text-purple-400 uppercase tracking-widest mb-2 block">{project.tag}</span>
                   <h3 className="text-2xl font-bold text-white">{project.title}</h3>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

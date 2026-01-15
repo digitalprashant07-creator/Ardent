@@ -2578,25 +2578,25 @@ function TestimonialsSection() {
     }, []);
     const testimonials = [
         {
-            quote: "I've increased Signature Club in 1 Million views within my first 3 months, and to be totally honest, I NEVER in a MILLION years did I think it was a legitimate thing. I thought maybe a large outlet/site or it's people who'd literally dedicated their ENTIRE life to...",
+            quote: "I've increased Ardent and Leap in 1 Million views within my first 3 months, and to be totally honest, I NEVER in a MILLION years did I think it was a legitimate thing. I thought maybe a large outlet/site or it's people who'd literally dedicated their ENTIRE life to...",
             name: "Sam Reynolds",
             role: "Property Manager ",
             image: "https://framerusercontent.com/images/xcVsFcFg7M5SkoOkJX5lUfdBUN4.jpg"
         },
         {
-            quote: "Building and keeping trust with clients is what we do best. We make sure every interaction strengthens your relationships and encourages long-term loyalty. Thanks to Signature Club.",
+            quote: "Building and keeping trust with clients is what we do best. We make sure every interaction strengthens your relationships and encourages long-term loyalty. Thanks to Ardent and Leap.",
             name: "Emma Turner",
             role: "Sales Manager",
             image: "https://framerusercontent.com/images/lyyanOkQwdFqEmTN9vhLsdsi0.jpg"
         },
         {
-            quote: "The best part about Signature Club is how they combine creativity with strategy. They don't just create content; they create content that converts. Our engagement has skyrocketed!",
+            quote: "The best part about Ardent and Leap is how they combine creativity with strategy. They don't just create content; they create content that converts. Our engagement has skyrocketed!",
             name: "Michael Chen",
             role: "CEO",
             image: "https://framerusercontent.com/images/a5SO6bWYO9JGc90jHykGK0g78.jpg"
         },
         {
-            quote: "Partnering with Signature Club has been a complete game-changer for us. Honestly, execution and planning is the hard part, working with them is the easy part!",
+            quote: "Partnering with Ardent and Leap has been a complete game-changer for us. Honestly, execution and planning is the hard part, working with them is the easy part!",
             name: "Oliver Martinez",
             role: "CMO ",
             image: "https://framerusercontent.com/images/iBem3bM7DskP1qLkV8JoHMLH68.jpg"
