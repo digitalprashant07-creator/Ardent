@@ -154,27 +154,27 @@ const ImageComparison = ({
   const containerRef = useRef<HTMLDivElement | null>(null);
 
 
-const handleMove = useCallback(
-  (event: MouseEvent | TouchEvent) => {
-    if (!containerRef.current) return;
+  const handleMove = useCallback(
+    (event: MouseEvent | TouchEvent) => {
+      if (!containerRef.current) return;
 
-    const rect = containerRef.current.getBoundingClientRect();
+      const rect = containerRef.current.getBoundingClientRect();
 
-    const clientX =
-      "touches" in event ? event.touches[0].clientX : event.clientX;
+      const clientX =
+        "touches" in event ? event.touches[0].clientX : event.clientX;
 
-    const x = clientX - rect.left;
-    const newPosition = Math.max(0, Math.min(100, (x / rect.width) * 100));
+      const x = clientX - rect.left;
+      const newPosition = Math.max(0, Math.min(100, (x / rect.width) * 100));
 
-    setSliderPosition(newPosition);
-  },
-  []
-);
+      setSliderPosition(newPosition);
+    },
+    []
+  );
 
 
-const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
-  handleMove(e.nativeEvent);
-};
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    handleMove(e.nativeEvent);
+  };
 
 
 
@@ -210,13 +210,13 @@ const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
   }, [isDragging, handleMove]);
 
   return (
-   <div
-  ref={containerRef}
-  className={`relative select-none group overflow-hidden cursor-ew-resize ${className}`}
-  onMouseDown={handleMouseDown}
-  onTouchStart={handleTouchStart}
-  onClick={handleClick}
->
+    <div
+      ref={containerRef}
+      className={`relative select-none group overflow-hidden cursor-ew-resize ${className}`}
+      onMouseDown={handleMouseDown}
+      onTouchStart={handleTouchStart}
+      onClick={handleClick}
+    >
 
 
       {/* Background Layer: AFTER (Full Color) */}
@@ -286,8 +286,8 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
-          ? "bg-white/80 backdrop-blur-md border-b border-gray-100 py-2"
-          : "bg-transparent py-6"
+        ? "bg-white/80 backdrop-blur-md border-b border-gray-100 py-2"
+        : "bg-transparent py-6"
         }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
@@ -336,12 +336,12 @@ const Navbar = () => {
 
 // 2. Hero Section
 const Hero = () => {
-const founders = [
-  "/img.jpg",
-  "/img.jpg",
-  "/img3.jpg",
-  "/img4.jpg",
-];
+  const founders = [
+    "/img.jpg",
+    "/img.jpg",
+    "/img3.jpg",
+    "/img4.jpg",
+  ];
 
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-white">
@@ -454,29 +454,6 @@ const founders = [
             </div>
 
             {/* Card 2: New Leads (Bottom Left) */}
-            <div className="hidden lg:block absolute -bottom-6 -left-12 z-30">
-              <div
-                className="animate-float-card"
-                style={{ animationDelay: "1.5s", animationDuration: "6s" }}
-              >
-                <div className="bg-white/80 backdrop-blur-md p-4 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/50 flex items-center gap-4 transition-transform hover:scale-105 cursor-default">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-orange-500/30">
-                    <Users className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
-                      New Leads
-                    </p>
-                    <div className="flex items-baseline gap-1">
-                      <p className="text-lg font-bold text-gray-900">+142</p>
-                      <span className="text-xs font-medium text-green-500 flex items-center">
-                        <ArrowRight className="w-3 h-3 rotate-[-45deg]" /> 8%
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             <div className="relative group">
               {/* Decorative Glow */}

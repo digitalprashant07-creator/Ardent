@@ -7,11 +7,11 @@ import Link from "next/link";
 const Hero = () => {
 
   const founders = [
-  "/img1.jpg",
-  "/img2.jpg",
-  "/img3.jpg",
-  "/img4.jpg",
-];
+    "/img1.jpg",
+    "/img2.jpg",
+    "/img3.jpg",
+    "/img4.jpg",
+  ];
 
   return (
     <section className="relative pt-24 pb-20 lg:pt-30 lg:pb-32 overflow-hidden bg-white">
@@ -77,27 +77,27 @@ const Hero = () => {
 
             {/* Avatar Circles Mockup */}
             <div className="flex items-center gap-4 animate-fade-in-up delay-500">
-             <div className="flex -space-x-4">
-  {founders.map((src, index) => (
-    <div
-      key={index}
-      className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-100"
-    >
-      <Image
-        src={src}
-        alt="Founder"
-        width={40}
-        height={40}
-        className="w-full h-full object-cover"
-        priority
-      />
-    </div>
-  ))}
+              <div className="flex -space-x-4">
+                {founders.map((src, index) => (
+                  <div
+                    key={index}
+                    className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-100"
+                  >
+                    <Image
+                      src={src}
+                      alt="Founder"
+                      width={40}
+                      height={40}
+                      className="w-full h-full object-cover"
+                      priority
+                    />
+                  </div>
+                ))}
 
-  <div className="w-10 h-10 rounded-full border-2 border-white bg-black text-white text-xs flex items-center justify-center font-bold">
-    +40
-  </div>
-</div>
+                <div className="w-10 h-10 rounded-full border-2 border-white bg-black text-white text-xs flex items-center justify-center font-bold">
+                  +40
+                </div>
+              </div>
               <div className="text-sm text-gray-500 text-left">
                 <span className="font-bold text-black">
                   Trusted by founders
@@ -138,22 +138,7 @@ const Hero = () => {
                 className="animate-float-card"
                 style={{ animationDelay: "1.5s", animationDuration: "6s" }}
               >
-                <div className="bg-white/80 backdrop-blur-md p-4 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/50 flex items-center gap-4 transition-transform hover:scale-105 cursor-default">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-orange-500/30">
-                    <Users className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
-                      New Leads
-                    </p>
-                    <div className="flex items-baseline gap-1">
-                      <p className="text-lg font-bold text-gray-900">+142</p>
-                      <span className="text-xs font-medium text-green-500 flex items-center">
-                        <ArrowRight className="w-3 h-3 rotate-[-45deg]" /> 8%
-                      </span>
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </div>
 
